@@ -42,7 +42,6 @@ router.get("/package",async(req,res)=>{
         res.send(e);
     }
 })
-
 // get the indivisual student data using id
 
 router.get("/package/:id",async(req,res)=>{
