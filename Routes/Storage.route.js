@@ -41,7 +41,7 @@ router.post("/storage",upload.single('cat_img'),async(req,res)=>{
 
 router.get("/storage",async(req,res)=>{
     try{
-        const storagesData = await Form.find();
+        const storagesData = await Storage.find();
         res.send(storagesData);
     }catch(e){
         res.send(e);

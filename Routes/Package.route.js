@@ -36,7 +36,7 @@ router.post("/package",upload.single('cat_img'),async(req,res)=>{
 
 router.get("/package",async(req,res)=>{
     try{
-        const packagesData = await Form.find();
+        const packagesData = await Package.find();
         res.send(packagesData);
     }catch(e){
         res.send(e);
