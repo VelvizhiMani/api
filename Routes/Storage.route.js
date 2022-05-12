@@ -38,7 +38,6 @@ router.post("/storage",upload.single('cat_img'),async(req,res)=>{
         res.status(400).send(e);
     }
 })
-
 router.get("/storage",async(req,res)=>{
     try{
         const storagesData = await Storage.find();
